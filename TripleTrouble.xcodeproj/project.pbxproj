@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2464BA25DAE3F10057A577 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2464B925DAE3F10057A577 /* App.swift */; };
+		0C2464BE25DAE3F30057A577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2464BD25DAE3F30057A577 /* Assets.xcassets */; };
+		0C2464C125DAE3F30057A577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2464C025DAE3F30057A577 /* Preview Assets.xcassets */; };
+		0CC7AC1D25DB023200D1B24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7AC1C25DB023200D1B24E /* Assets.xcassets */; };
+		0CC7AC2025DB023200D1B24E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7AC1F25DB023200D1B24E /* Preview Assets.xcassets */; };
+		0CC7AC2925DB024500D1B24E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2464B925DAE3F10057A577 /* App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C2464B625DAE3F10057A577 /* TripleTrouble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleTrouble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2464B925DAE3F10057A577 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		0C2464BD25DAE3F30057A577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C2464C025DAE3F30057A577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C2464C225DAE3F30057A577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2464C325DAE3F30057A577 /* TestSidebar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestSidebar.entitlements; sourceTree = "<group>"; };
+		0CC7AC1625DB023000D1B24E /* TribleTroubleiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TribleTroubleiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC7AC1C25DB023200D1B24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CC7AC1F25DB023200D1B24E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CC7AC2125DB023200D1B24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C2464B325DAE3F10057A577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC7AC1325DB023000D1B24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2464AD25DAE3F10057A577 = {
+			isa = PBXGroup;
+			children = (
+				0C2464B825DAE3F10057A577 /* TestSidebar */,
+				0CC7AC1725DB023000D1B24E /* TribleTroubleiPad */,
+				0C2464B725DAE3F10057A577 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C2464B725DAE3F10057A577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C2464B625DAE3F10057A577 /* TripleTrouble.app */,
+				0CC7AC1625DB023000D1B24E /* TribleTroubleiPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C2464B825DAE3F10057A577 /* TestSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				0C2464B925DAE3F10057A577 /* App.swift */,
+				0C2464BD25DAE3F30057A577 /* Assets.xcassets */,
+				0C2464C225DAE3F30057A577 /* Info.plist */,
+				0C2464C325DAE3F30057A577 /* TestSidebar.entitlements */,
+				0C2464BF25DAE3F30057A577 /* Preview Content */,
+			);
+			path = TestSidebar;
+			sourceTree = "<group>";
+		};
+		0C2464BF25DAE3F30057A577 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C2464C025DAE3F30057A577 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CC7AC1725DB023000D1B24E /* TribleTroubleiPad */ = {
+			isa = PBXGroup;
+			children = (
+				0CC7AC1C25DB023200D1B24E /* Assets.xcassets */,
+				0CC7AC2125DB023200D1B24E /* Info.plist */,
+				0CC7AC1E25DB023200D1B24E /* Preview Content */,
+			);
+			path = TribleTroubleiPad;
+			sourceTree = "<group>";
+		};
+		0CC7AC1E25DB023200D1B24E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0CC7AC1F25DB023200D1B24E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C2464B525DAE3F10057A577 /* TripleTrouble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C2464C625DAE3F30057A577 /* Build configuration list for PBXNativeTarget "TripleTrouble" */;
+			buildPhases = (
+				0C2464B225DAE3F10057A577 /* Sources */,
+				0C2464B325DAE3F10057A577 /* Frameworks */,
+				0C2464B425DAE3F10057A577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripleTrouble;
+			productName = TestSidebar;
+			productReference = 0C2464B625DAE3F10057A577 /* TripleTrouble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CC7AC1525DB023000D1B24E /* TribleTroubleiPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CC7AC2225DB023200D1B24E /* Build configuration list for PBXNativeTarget "TribleTroubleiPad" */;
+			buildPhases = (
+				0CC7AC1225DB023000D1B24E /* Sources */,
+				0CC7AC1325DB023000D1B24E /* Frameworks */,
+				0CC7AC1425DB023000D1B24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TribleTroubleiPad;
+			productName = TribleTroubleiPad;
+			productReference = 0CC7AC1625DB023000D1B24E /* TribleTroubleiPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C2464AE25DAE3F10057A577 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					0C2464B525DAE3F10057A577 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0CC7AC1525DB023000D1B24E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 0C2464B125DAE3F10057A577 /* Build configuration list for PBXProject "TripleTrouble" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C2464AD25DAE3F10057A577;
+			productRefGroup = 0C2464B725DAE3F10057A577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C2464B525DAE3F10057A577 /* TripleTrouble */,
+				0CC7AC1525DB023000D1B24E /* TribleTroubleiPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C2464B425DAE3F10057A577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2464C125DAE3F30057A577 /* Preview Assets.xcassets in Resources */,
+				0C2464BE25DAE3F30057A577 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC7AC1425DB023000D1B24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC7AC2025DB023200D1B24E /* Preview Assets.xcassets in Resources */,
+				0CC7AC1D25DB023200D1B24E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C2464B225DAE3F10057A577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2464BA25DAE3F10057A577 /* App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CC7AC1225DB023000D1B24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC7AC2925DB024500D1B24E /* App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C2464C425DAE3F30057A577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C2464C525DAE3F30057A577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0C2464C725DAE3F30057A577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestSidebar/TestSidebar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TestSidebar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TestSidebar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.TestSidebar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0C2464C825DAE3F30057A577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestSidebar/TestSidebar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TestSidebar/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TestSidebar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.TestSidebar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0CC7AC2325DB023200D1B24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TribleTroubleiPad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TribleTroubleiPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.TribleTroubleiPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CC7AC2425DB023200D1B24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TribleTroubleiPad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TribleTroubleiPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.kean.TribleTroubleiPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C2464B125DAE3F10057A577 /* Build configuration list for PBXProject "TripleTrouble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2464C425DAE3F30057A577 /* Debug */,
+				0C2464C525DAE3F30057A577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C2464C625DAE3F30057A577 /* Build configuration list for PBXNativeTarget "TripleTrouble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2464C725DAE3F30057A577 /* Debug */,
+				0C2464C825DAE3F30057A577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC7AC2225DB023200D1B24E /* Build configuration list for PBXNativeTarget "TribleTroubleiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC7AC2325DB023200D1B24E /* Debug */,
+				0CC7AC2425DB023200D1B24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C2464AE25DAE3F10057A577 /* Project object */;
+}
