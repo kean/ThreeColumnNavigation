@@ -48,7 +48,7 @@ struct Sidebar: View {
 
 struct IndoxView: View {
     var body: some View {
-        List(allMessages, id: \.self) { message in
+        List(Array(0...100).map(String.init), id: \.self) { message in
             NavigationLink(destination: MessageDetailsView(message: message)) {
                 Text(message)
             }
@@ -86,8 +86,6 @@ struct MessageDetailsView: View {
             }
     }
 }
-
-let allMessages = Array(0...100).map(String.init)
 ```
 
 ## Screenshot
