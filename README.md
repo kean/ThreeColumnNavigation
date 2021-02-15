@@ -6,7 +6,7 @@ See [the post](https://kean.blog/post/triple-trouble) for more info.
 
 ## Code
 
-```
+```swift
 import SwiftUI
 
 @main
