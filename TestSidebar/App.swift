@@ -21,7 +21,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Sidebar()
+            #if os(macOS)
             Text("No Sidebar Selection")
+            #else
+            IndoxView() // on iOS, isActive doesn't work (defect?)
+            #endif
             Text("No Message Selection")
         }
     }
