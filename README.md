@@ -4,7 +4,7 @@ A minimal example of three-column navigation for iPad and macOS using SwiftUI.
 
 See [the post](https://kean.blog/post/triple-trouble) for more info.
 
-> **WARNING**: This works on Big Sur, but it is broken on Catalina and earlier versions.
+> **WARNING**: This solution requires Big Sur.
 
 ## Code
 
