@@ -12,15 +12,21 @@ See [the post](https://kean.blog/post/triple-trouble) for more info.
 import SwiftUI
 
 @main
-struct BestApp: App {
+struct TestSidebarApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
+        }
+        // Uncomment to hide title
+        // .windowToolbarStyle(UnifiedWindowToolbarStyle(showsTitle: false))
+        .commands {
+            SidebarCommands()
         }
     }
 }
 
-struct MainView: View {
+struct ContentView: View {
+
     var body: some View {
         NavigationView {
             Sidebar()
@@ -44,8 +50,19 @@ struct Sidebar: View {
             NavigationLink(destination: SentView()) {
                 Label("Sent", systemImage: "paperplane")
             }
-        }.listStyle(SidebarListStyle())
+        }
+        .listStyle(SidebarListStyle())
+        .toolbar {
+            Button(action: toggleSidebar) {
+                Image(systemName: "sidebar.left")
+            }
+        }
     }
+}
+
+private func toggleSidebar() {
+    NSApp.keyWindow?.firstResponder?
+        .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
 }
 
 struct IndoxView: View {
