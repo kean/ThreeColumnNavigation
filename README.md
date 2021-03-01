@@ -29,18 +29,18 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            Sidebar()
+            SidebarView()
             Text("No Sidebar Selection")
             Text("No Message Selection")
         }
     }
 }
 
-struct Sidebar: View {
+struct SidebarView: View {
     @State private var isDefaultItemActive = true
 
     var body: some View {
-        List {
+        let list = List {
             Text("Favorites")
                 .font(.caption)
                 .foregroundColor(.secondary)
@@ -52,18 +52,25 @@ struct Sidebar: View {
             }
         }
         .listStyle(SidebarListStyle())
-        .toolbar {
+
+        #if os(macOS)
+        list.toolbar {
             Button(action: toggleSidebar) {
                 Image(systemName: "sidebar.left")
             }
         }
+        #else
+        list
+        #endif
     }
 }
 
+#if os(macOS)
 private func toggleSidebar() {
     NSApp.keyWindow?.firstResponder?
         .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
 }
+#endif
 
 struct IndoxView: View {
     var body: some View {
@@ -111,7 +118,7 @@ struct MessageDetailsView: View {
 
 <br/>
 
-![Screen Shot 2021-02-15 at 14 38 54](https://user-images.githubusercontent.com/1567433/107989973-6c295d00-6fa1-11eb-8e89-935571a4f47a.png)
+![Screen Shot 2021-02-15 at 14 38 54](https://user-images.githubusercontent.com/1567433/109503478-54a1a800-7a68-11eb-99c6-20a2e0935b22.png)
 
 <br/>
 
