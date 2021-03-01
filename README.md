@@ -111,7 +111,7 @@ struct MessageDetailsView: View {
 
 <br/>
 
-![Screen Shot 2021-02-15 at 14 38 54](https://user-images.githubusercontent.com/1567433/107989973-6c295d00-6fa1-11eb-8e89-935571a4f47a.png)
+![Screen Shot 2021-02-15 at 14 38 54](https://user-images.githubusercontent.com/1567433/109503478-54a1a800-7a68-11eb-99c6-20a2e0935b22.png)
 
 <br/>
 
