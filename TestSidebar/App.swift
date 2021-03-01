@@ -36,7 +36,7 @@ struct Sidebar: View {
     @State private var isDefaultItemActive = true
 
     var body: some View {
-        List {
+        let list = List {
             Text("Favorites")
                 .font(.caption)
                 .foregroundColor(.secondary)
@@ -48,22 +48,29 @@ struct Sidebar: View {
             }
         }
         .listStyle(SidebarListStyle())
-        .toolbar {
+
+        #if os(macOS)
+        list.toolbar {
             Button(action: toggleSidebar) {
                 Image(systemName: "sidebar.left")
             }
         }
+        #else
+        list
+        #endif
     }
 }
 
+#if os(macOS)
 private func toggleSidebar() {
     NSApp.keyWindow?.firstResponder?
         .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
 }
+#endif
 
 struct IndoxView: View {
     var body: some View {
-        List(allMessages, id: \.self) { message in
+        List(Array(0...100).map(String.init), id: \.self) { message in
             NavigationLink(destination: MessageDetailsView(message: message)) {
                 Text(message)
             }
@@ -101,8 +108,6 @@ struct MessageDetailsView: View {
             }
     }
 }
-
-let allMessages = Array(0...100).map(String.init)
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
