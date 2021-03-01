@@ -13,6 +13,11 @@ struct TestSidebarApp: App {
         WindowGroup {
             ContentView()
         }
+        // Uncomment to hide title
+        // .windowToolbarStyle(UnifiedWindowToolbarStyle(showsTitle: false))
+        .commands {
+            SidebarCommands()
+        }
     }
 }
 
@@ -41,8 +46,19 @@ struct Sidebar: View {
             NavigationLink(destination: SentView()) {
                 Label("Sent", systemImage: "paperplane")
             }
-        }.listStyle(SidebarListStyle())
+        }
+        .listStyle(SidebarListStyle())
+        .toolbar {
+            Button(action: toggleSidebar) {
+                Image(systemName: "sidebar.left")
+            }
+        }
     }
+}
+
+private func toggleSidebar() {
+    NSApp.keyWindow?.firstResponder?
+        .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
 }
 
 struct IndoxView: View {
