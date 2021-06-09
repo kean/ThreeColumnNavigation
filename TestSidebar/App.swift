@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+#if canImport(UIKit)
+import UIKit
+#endif
+
 @main
 struct TestSidebarApp: App {
     var body: some Scene {
@@ -28,6 +32,12 @@ struct ContentView: View {
             Sidebar()
             Text("No Sidebar Selection")
             Text("No Message Selection")
+        }
+        .onAppear {
+            #if canImport(UIKit)
+            // Setting up iPad layout to match macOS behaviour
+            UIApplication.shared.setFirstSplitViewPreferredDisplayMode(.twoBesideSecondary)
+            #endif
         }
     }
 }
@@ -114,3 +124,36 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+// MARK: - Consistency with iPad
+
+#if canImport(UIKit)
+private extension UIApplication {
+    func setFirstSplitViewPreferredDisplayMode(_ preferredDisplayMode: UISplitViewController.DisplayMode) {
+        var splitViewController: UISplitViewController? {
+            UIApplication.shared.firstSplitViewController
+        }
+        
+        // Sometimes split view is not available instantly
+        if let splitViewController = splitViewController {
+            splitViewController.preferredDisplayMode = preferredDisplayMode
+        } else {
+            DispatchQueue.main.async {
+                splitViewController?.preferredDisplayMode = preferredDisplayMode
+            }
+        }
+    }
+    
+    private var firstSplitViewController: UISplitViewController? {
+        windows.first { $0.isKeyWindow }?
+            .rootViewController?.firstSplitViewController
+    }
+}
+
+private extension UIViewController {
+    var firstSplitViewController: UISplitViewController? {
+        self as? UISplitViewController
+            ?? children.lazy.compactMap { $0.firstSplitViewController }.first
+    }
+}
+#endif
